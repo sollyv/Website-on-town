@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bonbon&family=Orbitron&family=Poppins&family=Risque&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
+  <title>Contact-Us</title>
+</head>
+<body>
+  <section class="header" id="static-img5">
+    <!-- <div class="static-img"></div> -->
+     <nav class="navbar">
+       <!-- LOGO -->
+       <div class="logo">
+        <a href="index.html"><img src="/images/logo.png" alt=""></a><h1>seanchill</h1>
+      </div>
+       <!-- NAVIGATION MENU -->
+       <ul class="nav-links">
+         <!-- USING CHECKBOX HACK -->
+         <input type="checkbox" id="checkbox_toggle" />
+         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+         <!-- NAVIGATION MENUS -->
+         <div class="menu">
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="about.html">ABOUT</a></li>
+           <li><a href="visit.html">VISIT</a></li>
+           <li><a href="explore.html">EXPLORE</a></li>
+           <li><a href="eat.html">EAT & DRINK</a></li>
+           <li><a class="active">CONTACT</a></li>
+         </div>
+       </ul>
+     </nav> 
+   </section>
+
+   <section>
+    <div class="contactcontainer">
+      <div class="contactL cform">
+        <h3>Send a Message</h3>
+        <form id="my-form" action="https://formsubmit.co/21SollyVinson@libertiescollege.ie" method="POST">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5503/thanks.html">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="formBox">
+            <div class="row50">
+              <div class="inputBox">
+                <span>First Name</span>
+                <input name="firstname" type="text" id="firstName" placeholder="Jane" required >
+              </div>
+              <div class="inputBox">
+                 <span>Last Name</span>
+                 <input name="lastname" type="text" id="lastName" placeholder="Doe" required>
+              </div>
+            </div>
+  
+           <div class="row50">
+             <div class="inputBox">
+               <span>Email</span>
+               <input class="email" name="email" type="email"  id="email" placeholder="janedoe@email.com" required>
+               <div class="field-error"></div>
+             </div>
+             <div class="inputBox">
+               <span>Mobile</span>
+               <input name="mob" type="text" id="mobile" placeholder="08 99754534" required>
+             </div>
+           </div>
+  
+           <div class="row100">
+             <div class="inputBox">
+               <span>Message</span>
+               <textarea name="msg" id="message" placeholder="Write your message....." required></textarea>
+             </div>
+           </div>
+  
+           <div class="row100">
+             <div class="inputBox">
+               <!-- <button type="submit">Send</button> -->
+               <input type="submit" value="Send" >
+             </div>
+           </div>
+  
+  
+          </div>
+         </form>
+         <div id="status"></div>
+      </div>
+      <!-- <div class="contactR"> -->
+        <div class="contact info">
+          <h3>Contact Info</h3>
+          <div class="infoBox">
+            <div>
+              <span><ion-icon name="location-outline"></ion-icon></span>
+              <p>Shankill, Dublin 18, Ireland</p>
+            </div>
+            <div>
+             <span><ion-icon name="mail-outline"></ion-icon></span>
+             <a href="mailto:21SollyVinson@libertiescollege.ie" target="_blank">21SollyVinson@libertiescollege.ie</a>
+           </div>
+           <div>
+             <span><ion-icon name="call-outline"></ion-icon></span>
+             <p>08 99765434</p>
+           </div>
+  
+           <!-- social media links -->
+           <ul class="sci">
+             <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+             <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+             <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+  
+  
+           </ul>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7241.294180149542!2d-6.133473226829469!3d53.233987607474276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867a8015fcf4c43%3A0x2600c7a819b93132!2sShankill%2C%20Dublin!5e0!3m2!1sen!2sie!4v1652354175175!5m2!1sen!2sie" width="100%"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        </div>
+  
+      <!-- </div> -->
+  
+    </div>  
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+   </section>   
+   <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <a href="index.html"><img src="/images/logo.png" class="logo" alt="homepage"></a>
+        <p>seanchill</p>
+      </div>
+      <div class="footer-col">
+        <h3>SEE AND DO <div class="underline"><span></span></div></h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <LI><a href="about.html">ABOUT-US</a></LI>
+          <li><a href="visit.html">PLAN YOUR VISIT</a></li>
+          <li><a href="explore.html">SEE AND DO</a></li>
+          <li><a href="eat.html">EAT & DRINK</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>  
+      <div class="footer-col">
+        <div class="social-media-icons">
+          <h3>FIND US ON <div class="underline"><span></span></div></h3>
+          <img src="/images/facebook.png" alt="">
+          <img src="/images/twitter.png" alt="">
+          <img src="/images/instagram.png" alt="">
+        </div>  
+       </div>
+    </div>
+    <hr>
+    <p class="copyright">Shankill &copy 2022</p>
+  </section>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="contact.js"></script>
+</body>
+</html>

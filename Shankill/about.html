@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bonbon&family=Orbitron&family=Poppins&family=Risque&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
+  <title>About</title>
+</head>
+<body>
+  <section class="header" id="static-img1">
+   <!-- <div class="static-img"></div> -->
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="index.html"><img src="/images/logo.png" alt=""></a><h1>seanchill</h1>
+      </div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active">ABOUT</a></li>
+          <li><a href="visit.html">VISIT</a></li>
+          <li><a href="explore.html">EXPLORE</a></li>
+          <li><a href="eat.html">EAT & DRINK</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </div>
+      </ul>
+    </nav>
+
+  </section>
+
+  <!-- Content section -->
+  <section class="content">
+    <div class="title">
+      <h1>History of Shankill</h1>
+      <div class="line"></div>
+    </div> 
+    <div class="about-content">
+      <div class="thumbanail right">
+        <img src="/images/Seanchill.jpeg" alt="" />
+      </div>      
+      <p>
+        The name Shankill is believed to derive either from the Irish Sean-Chill,meaning Old Church, or Sean-Choill, meaning Old Wood.Though this supposed origin of the name is not certain, it would be apt conidering Shankill's many centuries of history and physical remnants of this history that remain possible to see today.<br><br> Located in a pocket of land to the east of the junction of the M11 and the M50, Shankill is a small parcel of south County Dublin that lies between Killiney and Bray but has its own village centre and access to the city centre via Dart and mainline rail.
+  
+        The town has a history of settlement as far back as the 13th century, with a number of notable fortified buildings – Shanganagh Castle and Shankill House among them – built as the town grew in size between 1400 and 1600.
+              
+        By the 19th century Shankill began to be developed as a commuter town for Dublin, by Sir Charles Compton William Domvile, with plans for large-scale development. Domvile’s bankruptcy prevented these plans from coming to complete fruition.
+              
+        At the turn of the 20th-century Shankill was still very much an agricultural area, its land divided into segments for tenant farmers, dotted with a number of large estates and period houses – including Shankill House and Shanganagh Castle. This began to change in the 1940s when the area experienced its first construction surge.
+              
+        With a coastline running along its eastern border, Shankill boasts the same seaside feel as its more illustrious neighbours.
+      </p>   
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+  </section>
+
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <a href="index.html"><img src="/images/logo.png" class="logo" alt="homepage"></a>
+        <p>seanchill</p>
+      </div>
+      <div class="footer-col">
+        <h3>SEE AND DO <div class="underline"><span></span></div></h3>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <LI><a href="about.html">ABOUT-US</a></LI>
+          <li><a href="visit.html">PLAN YOUR VISIT</a></li>
+          <li><a href="explore.html">SEE AND DO</a></li>
+          <li><a href="eat.html">EAT & DRINK</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>  
+      <div class="footer-col">
+        <div class="social-media-icons">
+          <h3>FIND US ON <div class="underline"><span></span></div></h3>
+          <img src="/images/facebook.png" alt="">
+          <img src="/images/twitter.png" alt="">
+          <img src="/images/instagram.png" alt="">
+        </div>  
+       </div>
+    </div>
+    <hr>
+    <p class="copyright">Shankill &copy 2022</p>
+  </section>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  
+</body>
+</html>
